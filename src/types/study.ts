@@ -68,7 +68,7 @@ export type Totals = {
 // Constants
 // ---------------------------------------------------------------------------
 
-export const STORAGE_KEY = 'ccaf-study-state-v3'
+export const STORAGE_KEY = 'ccaf-study-state-v4'
 
 export const INITIAL_STATE: StudyState = {
   examDate: null,
