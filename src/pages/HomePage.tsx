@@ -200,9 +200,9 @@ function StatsGrid({
 // ---------------------------------------------------------------------------
 
 const SCORE_COLOR = (score: number) =>
-  score >= 85
+  score >= 75
     ? 'text-emerald-500'
-    : score >= 75
+    : score >= 60
       ? 'text-amber-500'
       : 'text-red-500'
 
@@ -269,15 +269,16 @@ function MockScoresCard({
           {/* Target indicator */}
           {latest && (
             <div className="rounded-md border bg-muted/40 px-3 py-2 text-xs text-muted-foreground">
-              Meta: <span className="font-medium text-foreground">85%</span>
+              Aprovação:{' '}
+              <span className="font-medium text-foreground">75%</span>
               {' · '}
-              {latest.score >= 85 ? (
-                <span className="text-emerald-500 font-medium">Atingida ✓</span>
+              {latest.score >= 75 ? (
+                <span className="text-emerald-500 font-medium">Aprovado ✓</span>
               ) : (
                 <span>
                   faltam{' '}
                   <span className="font-medium text-foreground">
-                    {85 - latest.score}pp
+                    {75 - latest.score} pontos
                   </span>
                 </span>
               )}
