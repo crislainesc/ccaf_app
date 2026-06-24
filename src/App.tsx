@@ -24,6 +24,8 @@ export default function App() {
     toggleActivity,
     updateNote,
     toggleTheme,
+    logMockScore,
+    clearMockScores,
   } = useStudyState()
 
   // Before the user sets an exam date, show only the setup screen
@@ -49,8 +51,11 @@ export default function App() {
             totals={totals}
             countdown={countdown}
             nextCourse={nextCourse}
+            mockScores={state.mockScores ?? []}
             onStart={() => setTab('courses')}
             onReset={handleReset}
+            onLogMockScore={logMockScore}
+            onClearMockScores={clearMockScores}
           />
         )}
 
