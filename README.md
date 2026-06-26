@@ -15,9 +15,10 @@
 |----------|---------|
 | ![Schedule page](docs/screenshots/schedule.png) | ![Courses page](docs/screenshots/courses.png) |
 
-| Mock score dialog |
-|------------------|
-| ![Mock score dialog](docs/screenshots/mock-dialog.png) |
+| Mock score dialog | Mobile |
+|------------------|--------|
+| ![Mock score dialog](docs/screenshots/mock-dialog.png) | ![Mobile home](docs/screenshots/home-mobile.png) |
+
 
 ---
 
